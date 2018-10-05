@@ -374,3 +374,47 @@
 2018-10-05 08:45:54.873+0000 ERROR [o.n.b.t.p.HouseKeeper] Fatal error occurred when handling a client connection: [id: 0xa6c7b093, L:/127.0.0.1:7472 ! R:/127.0.0.1:39450] syscall:write(..) failed: Broken pipe
 io.netty.channel.unix.Errors$NativeIoException: syscall:write(..) failed: Broken pipe
 	at io.netty.channel.unix.FileDescriptor.writeAddress(..)(Unknown Source)
+2018-10-05 09:23:53.952+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Neo4j::Migrations::SchemaMigration(migration_id) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:23:54.466+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@24f5f81f[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:54.467+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@24f5f81f[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:54.710+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:Neo4j::Migrations::SchemaMigration(migration_id) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:23:55.308+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:User(uuid) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:23:55.596+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@367c1843[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:55.597+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@367c1843[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:55.808+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:User(uuid) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:23:56.231+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Category(uuid) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:23:56.538+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@3cb11ae1[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:56.539+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@3cb11ae1[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:56.741+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:Category(uuid) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:23:57.069+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Asset(uuid) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:23:57.387+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@76b1e997[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:57.388+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@76b1e997[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:57.453+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 20 checkpoint started...
+2018-10-05 09:23:57.764+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:Asset(uuid) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:23:58.184+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Book(uuid) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:23:58.569+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@13ec02cd[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:58.569+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@13ec02cd[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:23:58.678+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 25 to [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2018-10-05 09:23:59.096+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:Book(uuid) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:23:59.211+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 20 checkpoint completed in 1s 756ms
+2018-10-05 09:23:59.213+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2018-10-05 09:25:24.340+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Book(isbn) [provider: {key=lucene+native, version=2.0}]]
+2018-10-05 09:25:24.644+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@4b5c30fa[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:25:24.645+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.ThreadPoolExecutor@4b5c30fa[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2018-10-05 09:25:24.890+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index [:Book(isbn) [provider: {key=lucene+native, version=2.0}]] is POPULATING.
+2018-10-05 09:38:59.240+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 36 checkpoint started...
+2018-10-05 09:39:00.210+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 36 to [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2018-10-05 09:39:00.343+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 36 checkpoint completed in 1s 102ms
+2018-10-05 09:39:00.343+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0

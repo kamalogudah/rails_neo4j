@@ -26,15 +26,14 @@
     <%= form.number_field :year_published %>
   </div>
 
-  <div class="field">
-    <%= form.label :author_id %>
-    <%= form.text_field :author_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category_id %>
-    <%= form.text_field :category_id %>
-  </div>
+ <div class="field">
+  <%= form.label :author %><br>
+  <%= form.select :author, options_from_collection_for_select(User.all, :id, :name, @book.author.try(:id)), include_blank: true %>
+</div>
+<div class="field">
+  <%= form.label :category %><br>
+  <%= form.select :category, options_from_collection_for_select(Category.order(:name), :id, :name, @book.category.try(:id)), include_blank: true %>
+</div>
 
   <div class="actions">
     <%= form.submit %>
