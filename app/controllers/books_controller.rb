@@ -4,7 +4,16 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all.with_associations(:author, :category)
+    @books = Book.all.with_associations(:author, :categories)
+    @recommendations = Book.as(:book).
+                    categories(:category).
+                    books(:other_book).
+                    where('book <> other_book').
+                    query.
+                    with('book, other_book, count(category) AS count').
+                    where('count > 1').
+                    pluck('book.isbn', 'collect(other_book)')
+    @recommendations = Hash[*@recommendations.flatten(1)]
   end
 
   # GET /books/1
@@ -69,6 +78,6 @@ class BooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:isbn, :title, :year_published, :author, :category)
+      params.require(:book).permit(:isbn, :title, :year_published, :author,  :category_ids => [])
     end
 end

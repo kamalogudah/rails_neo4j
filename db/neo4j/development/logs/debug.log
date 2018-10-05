@@ -418,3 +418,7 @@ BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.Thre
 2018-10-05 09:39:00.210+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 36 to [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
 2018-10-05 09:39:00.343+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 36 checkpoint completed in 1s 102ms
 2018-10-05 09:39:00.343+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2018-10-05 09:54:00.364+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 41 checkpoint started...
+2018-10-05 09:54:01.239+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 41 to [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/home/kamal/Sites/RoR/asset_portal/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2018-10-05 09:54:01.459+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 41 checkpoint completed in 1s 94ms
+2018-10-05 09:54:01.459+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0

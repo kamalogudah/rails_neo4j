@@ -31,8 +31,8 @@
   <%= form.select :author, options_from_collection_for_select(User.all, :id, :name, @book.author.try(:id)), include_blank: true %>
 </div>
 <div class="field">
-  <%= form.label :category %><br>
-  <%= form.select :category, options_from_collection_for_select(Category.order(:name), :id, :name, @book.category.try(:id)), include_blank: true %>
+  <%= form.label :categories %><br>
+  <%= form.select :category_ids, options_from_collection_for_select(Category.order(:name), :id, :name, @book.categories.map(&:id)), {include_blank: true}, {multiple: true, size: 5} %>
 </div>
 
   <div class="actions">

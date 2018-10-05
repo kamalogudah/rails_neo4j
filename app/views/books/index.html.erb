@@ -9,7 +9,8 @@
       <th>Title</th>
       <th>Year published</th>
       <th>Author</th>
-      <th>Category</th>
+      <th>Categories</th>
+      <th>Recommendations</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,7 +22,13 @@
         <td><%= book.title %></td>
         <td><%= book.year_published %></td>
         <td><%= book.author.try(:name) %></td>
-        <td><%= book.category.try(:name) %></td>
+        <td><ul>
+         <% book.categories.each do |category| %>
+              <li><%= link_to category.name, category %></li>
+              <% end %>
+             </ul>
+        </td>
+        <td><%= (@recommendations[book.isbn] || []).map(&:title).to_sentence %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
